@@ -67,7 +67,6 @@ function validadorEdad($edad)
         return ['valido' => false, 'errores' => $errores];
     }
 
-    $edad = (int)$edad;
     if ($edad < 1) {
         $errores[] = 'La edad deber ser mayor que cero ';
     } elseif ($edad > 100) {
